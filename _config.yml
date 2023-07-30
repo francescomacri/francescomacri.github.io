@@ -1,6 +1,6 @@
 title: Mathematics Into Code
-author: Francesco Macrì
-  name: Francesco Macrì
+author: 
+  name: 
   email: your-email@domain.com
 
 # The `>` after `description:` means to ignore line-breaks until next key.
@@ -54,5 +54,3 @@ minima:
 # Set to `true` to show excerpts on the homepage.
 #
 # show_excerpts: false
-
-skin: dark
