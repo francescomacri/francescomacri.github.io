@@ -1,6 +1,6 @@
-title: Your awesome title
-author:
-  name: GitHub User
+title: Mathematics Into Code
+author: Francesco Macrì
+  name: Francesco Macrì
   email: your-email@domain.com
 
 # The `>` after `description:` means to ignore line-breaks until next key.
@@ -15,7 +15,7 @@ description: >
 theme: minima
 
 plugins:
-  - jekyll-feed
+#  - jekyll-feed
   - jekyll-seo-tag
 
 # Theme-specific settings
