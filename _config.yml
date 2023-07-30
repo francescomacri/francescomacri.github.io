@@ -15,7 +15,7 @@ description: >
 theme: minima
 
 plugins:
-#  - jekyll-feed
+  - jekyll-feed
   - jekyll-seo-tag
 
 # Theme-specific settings
@@ -54,3 +54,5 @@ minima:
 # Set to `true` to show excerpts on the homepage.
 #
 # show_excerpts: false
+
+skin: dark
