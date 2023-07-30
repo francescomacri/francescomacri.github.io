@@ -1,6 +1,0 @@
-# This is MathJax
-
-\\[ \sum \\]
-$$ \sum $$
-$ \sum $
-\\( \sum \\)
