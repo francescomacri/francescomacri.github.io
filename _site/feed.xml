@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-30T13:20:09+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mathematics Into Code</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;&quot;your-email@domain.com&quot;}</name><email>your-email@domain.com</email></author><entry><title type="html">MathJax - Test</title><link href="http://localhost:4000/2023/07/30/mathjax.html" rel="alternate" type="text/html" title="MathJax - Test" /><published>2023-07-30T00:00:00+02:00</published><updated>2023-07-30T00:00:00+02:00</updated><id>http://localhost:4000/2023/07/30/mathjax</id><content type="html" xml:base="http://localhost:4000/2023/07/30/mathjax.html">&lt;h2 id=&quot;this-is-mathematics&quot;&gt;This is Mathematics&lt;/h2&gt;
-
-&lt;p&gt;This is a mathematical formula:&lt;/p&gt;
-
-&lt;p&gt;\[ \sum_{k = 1}^{n} k = 1 + 2 + 3 + \cdots + n.\]&lt;/p&gt;
-
-&lt;p&gt;This is yet another test \( y^{3} \).&lt;/p&gt;</content><author><name>Francesco</name></author><summary type="html">This is Mathematics</summary></entry></feed>
