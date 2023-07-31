@@ -19,3 +19,8 @@ With two square brackets one gets centered math formulas like this:
 
 With normal brackets one gets inline-math-formulas like this: 
 \\( \sum_{k=1}^{n} k \\)
+
+$$ x^{2} $$
+
+$ x^{2} $
+
