@@ -53,20 +53,6 @@
 
 <p>No laudem altera adolescens has, volumus lucilius eum no. Eam ei nulla audiam efficiantur. Suas affert per no, ei tale nibh sea. Sea ne magna harum, in denique scriptorem sea, cetero alienum tibique ei eos. Labores persequeris referrentur eos ei.</p>
 
-<h2 id="this-is-a-mathjax-test">This is a MathJax-Test</h2>
-<h3 id="here-are-the-different-possibilities">Here are the different possibilities</h3>
-
-<p>With two square brackets one gets centered math formulas like this: 
-\[ \sum_{k=1}^{n} k \]</p>
-
-<p>With normal brackets one gets inline-math-formulas like this: 
-\( \sum_{k=1}^{n} k \)</p>
-
-\[x^{2}\]
-
-<p>$ x^{2} $</p>
-
-
   </div><a class="u-url" href="/2016/05/20/my-example-post.html" hidden></a>
 </article>
 
@@ -107,6 +93,16 @@
 </html>
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript"
-  src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  </script>
