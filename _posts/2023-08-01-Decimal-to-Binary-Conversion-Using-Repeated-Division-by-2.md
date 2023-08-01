@@ -45,7 +45,7 @@ if __name__ == "__main__":
 
 _Output:_ 20 in binary notation is 10100.
 
-<a href="https://github.com/francescomacri/Number_Theory_Into_Code/blob/main/decimal_to_binary.py">Here</a> you will find the code snippet in GitHub.
+<a href="https://github.com/francescomacri/Number_Theory_Into_Code/blob/main/decimal_to_binary.py" target="_blank">Here</a> you will find the code snippet in GitHub.
 
 ## Variation: Converting from decimal to hexadecimal
 
@@ -88,4 +88,4 @@ if __name__ == "__main__":
 
 _Output:_ 287 in hexadecimal notation is 11F.
 
-<a href="https://github.com/francescomacri/Number_Theory_Into_Code/blob/main/decimal_to_hexadecimal.py" target="blank">Here</a> will find the code snippet in GitHub.
+<a href="https://github.com/francescomacri/Number_Theory_Into_Code/blob/main/decimal_to_hexadecimal.py" target="_blank">Here</a> will find the code snippet in GitHub.
