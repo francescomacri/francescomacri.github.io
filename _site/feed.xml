@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-08-01T15:52:55+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mathematics Into Code</title><subtitle>Welcome! This is my GitHub-weppage Mathematics Into Code where I delve into the algorithmic and computational side of mathematics. You’ll find a variety of interesting posts that combine mathematical concepts with computational problem-solving.
-</subtitle><author><name>Francesco Macrì</name><email>francescomacri [at] piecesofmathematics [dot] com</email></author><entry><title type="html">Decimal To Binary Conversion Using Repeated Division By 2</title><link href="http://localhost:4000/2023/08/01/Decimal-to-Binary-Conversion-Using-Repeated-Division-by-2.html" rel="alternate" type="text/html" title="Decimal To Binary Conversion Using Repeated Division By 2" /><published>2023-08-01T00:00:00+02:00</published><updated>2023-08-01T00:00:00+02:00</updated><id>http://localhost:4000/2023/08/01/Decimal-to-Binary-Conversion-Using-Repeated-Division-by-2</id><content type="html" xml:base="http://localhost:4000/2023/08/01/Decimal-to-Binary-Conversion-Using-Repeated-Division-by-2.html">&lt;p&gt;In this algorithm the input is a nonnegative integer $a$. The aim of this algorithm is to produce a sequence of binary digits $r[0],r[1],r[2], \dots , r[k]$ so that the binary representation of $n$ is:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-08-01T16:02:30+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mathematics Into Code</title><subtitle>Welcome! This is my GitHub-weppage Mathematics Into Code where I delve into the algorithmic and computational side of mathematics. You’ll find a variety of interesting posts that combine mathematical concepts with computational problem-solving.
+</subtitle><author><name>Francesco Macrì</name><email>francescomacri [at] piecesofmathematics [dot] com</email></author><entry><title type="html">Decimal To Binary Conversion Using Repeated Division By 2</title><link href="http://localhost:4000/number_theory/2023/08/01/Decimal-to-Binary-Conversion-Using-Repeated-Division-by-2.html" rel="alternate" type="text/html" title="Decimal To Binary Conversion Using Repeated Division By 2" /><published>2023-08-01T00:00:00+02:00</published><updated>2023-08-01T00:00:00+02:00</updated><id>http://localhost:4000/number_theory/2023/08/01/Decimal-to-Binary-Conversion-Using-Repeated-Division-by-2</id><content type="html" xml:base="http://localhost:4000/number_theory/2023/08/01/Decimal-to-Binary-Conversion-Using-Repeated-Division-by-2.html">&lt;p&gt;In this algorithm the input is a nonnegative integer $a$. The aim of this algorithm is to produce a sequence of binary digits $r[0],r[1],r[2], \dots , r[k]$ so that the binary representation of $n$ is:&lt;/p&gt;
 
 \[a = 2^{k} \cdot r[k] + 2^{k-1} \cdot r[k-1] + \cdots + 2^{2} \cdot r[2] + 2^{1} \cdot r[1] + 2^{0} \cdot r[0].\]
 
@@ -7,7 +7,7 @@
 
 &lt;p&gt;&lt;em&gt;Sample solution in Python&lt;/em&gt;:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
 
 &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;decimal_to_binary_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
@@ -33,7 +33,8 @@
 
 
 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;__main__&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+    &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;Output:&lt;/em&gt; 20 in binary notation is 10100.&lt;/p&gt;
 
@@ -45,7 +46,7 @@
 
 &lt;p&gt;Here is the sample solution in Python:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;decimal_to_hexadecimal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decimal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;decimal_to_hexadecimal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decimal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;decimal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;
 
@@ -71,11 +72,12 @@
 
 
 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;__main__&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+    &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;Output:&lt;/em&gt; 287 in hexadecimal notation is 11F.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/francescomacri/Number_Theory_Into_Code/blob/main/decimal_to_hexadecimal.py&quot; target=&quot;_blank&quot;&gt;Here&lt;/a&gt; will find the code snippet in GitHub.&lt;/p&gt;</content><author><name>Francesco Macrì</name></author><summary type="html">In this algorithm the input is a nonnegative integer $a$. The aim of this algorithm is to produce a sequence of binary digits $r[0],r[1],r[2], \dots , r[k]$ so that the binary representation of $n$ is:</summary></entry><entry><title type="html">Euclidean Algorithm</title><link href="http://localhost:4000/2023/08/01/Euclidean-Algorithm.html" rel="alternate" type="text/html" title="Euclidean Algorithm" /><published>2023-08-01T00:00:00+02:00</published><updated>2023-08-01T00:00:00+02:00</updated><id>http://localhost:4000/2023/08/01/Euclidean-Algorithm</id><content type="html" xml:base="http://localhost:4000/2023/08/01/Euclidean-Algorithm.html">&lt;p&gt;Given two integers $A$ and $B$ with $A &amp;gt; B \geqslant 0$, this algorithm computes gcd($A, B$). It is based on two facts:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/francescomacri/Number_Theory_Into_Code/blob/main/decimal_to_hexadecimal.py&quot; target=&quot;_blank&quot;&gt;Here&lt;/a&gt; will find the code snippet in GitHub.&lt;/p&gt;</content><author><name>Francesco Macrì</name></author><category term="Number_Theory" /><summary type="html">In this algorithm the input is a nonnegative integer $a$. The aim of this algorithm is to produce a sequence of binary digits $r[0],r[1],r[2], \dots , r[k]$ so that the binary representation of $n$ is:</summary></entry><entry><title type="html">Euclidean Algorithm</title><link href="http://localhost:4000/number_theory/2023/08/01/Euclidean-Algorithm.html" rel="alternate" type="text/html" title="Euclidean Algorithm" /><published>2023-08-01T00:00:00+02:00</published><updated>2023-08-01T00:00:00+02:00</updated><id>http://localhost:4000/number_theory/2023/08/01/Euclidean-Algorithm</id><content type="html" xml:base="http://localhost:4000/number_theory/2023/08/01/Euclidean-Algorithm.html">&lt;p&gt;Given two integers $A$ and $B$ with $A &amp;gt; B \geqslant 0$, this algorithm computes gcd($A, B$). It is based on two facts:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;gcd($a, b$) = gcd($b, r$) if $a, b, q,$ and $r$ are integers with $a = b \cdot q + r$ and $0 \leqslant r &amp;lt; b$.&lt;/li&gt;
@@ -86,7 +88,7 @@
 
 &lt;p&gt;&lt;em&gt;Sample solution in Python&lt;/em&gt;.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;euclid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;euclid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
         &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
@@ -103,173 +105,9 @@
 
 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;__main__&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
     &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+    
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;Output:&lt;/em&gt; The gcd of 48 and 16 is 16.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/francescomacri/Number_Theory_Into_Code/blob/main/euclidean_algorithm.py&quot; target=&quot;_blank&quot;&gt;Here&lt;/a&gt; you will find the code snippet in GitHub.&lt;/p&gt;</content><author><name>Francesco Macrì</name></author><summary type="html">Given two integers $A$ and $B$ with $A &amp;gt; B \geqslant 0$, this algorithm computes gcd($A, B$). It is based on two facts:</summary></entry><entry><title type="html">This post demonstrates post content styles</title><link href="http://localhost:4000/junk/2016/05/20/this-post-demonstrates-post-content-styles.html" rel="alternate" type="text/html" title="This post demonstrates post content styles" /><published>2016-05-20T00:00:00+02:00</published><updated>2016-05-20T00:00:00+02:00</updated><id>http://localhost:4000/junk/2016/05/20/this-post-demonstrates-post-content-styles</id><content type="html" xml:base="http://localhost:4000/junk/2016/05/20/this-post-demonstrates-post-content-styles.html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.&lt;/p&gt;
-
-&lt;h2 id=&quot;some-great-heading-h2&quot;&gt;Some great heading (h2)&lt;/h2&gt;
-
-&lt;p&gt;Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu.&lt;/p&gt;
-
-&lt;p&gt;Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.&lt;/p&gt;
-
-&lt;h2 id=&quot;another-great-heading-h2&quot;&gt;Another great heading (h2)&lt;/h2&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.&lt;/p&gt;
-
-&lt;h3 id=&quot;some-great-subheading-h3&quot;&gt;Some great subheading (h3)&lt;/h3&gt;
-
-&lt;p&gt;Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum.&lt;/p&gt;
-
-&lt;p&gt;Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc.&lt;/p&gt;
-
-&lt;h3 id=&quot;some-great-subheading-h3-1&quot;&gt;Some great subheading (h3)&lt;/h3&gt;
-
-&lt;p&gt;Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;This quote will &lt;em&gt;change&lt;/em&gt; your life. It will reveal the &lt;i&gt;secrets&lt;/i&gt; of the universe, and all the wonders of humanity. Don’t &lt;em&gt;misuse&lt;/em&gt; it.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt.&lt;/p&gt;
-
-&lt;h3 id=&quot;some-great-subheading-h3-2&quot;&gt;Some great subheading (h3)&lt;/h3&gt;
-
-&lt;p&gt;Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum.&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Hello, World!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.&lt;/p&gt;
-
-&lt;h4 id=&quot;you-might-want-a-sub-subheading-h4&quot;&gt;You might want a sub-subheading (h4)&lt;/h4&gt;
-
-&lt;p&gt;In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.&lt;/p&gt;
-
-&lt;p&gt;In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.&lt;/p&gt;
-
-&lt;h4 id=&quot;but-its-probably-overkill-h4&quot;&gt;But it’s probably overkill (h4)&lt;/h4&gt;
-
-&lt;p&gt;In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.&lt;/p&gt;
-
-&lt;h5 id=&quot;could-be-a-smaller-sub-heading-pacman-h5&quot;&gt;Could be a smaller sub-heading, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pacman&lt;/code&gt; (h5)&lt;/h5&gt;
-
-&lt;p&gt;In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.&lt;/p&gt;
-
-&lt;h6 id=&quot;small-yet-significant-sub-heading--h6&quot;&gt;Small yet significant sub-heading  (h6)&lt;/h6&gt;
-
-&lt;p&gt;In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.&lt;/p&gt;
-
-&lt;h3 id=&quot;oh-hai-an-unordered-list&quot;&gt;Oh hai, an unordered list!!&lt;/h3&gt;
-
-&lt;p&gt;In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;First item, yo&lt;/li&gt;
-  &lt;li&gt;Second item, dawg&lt;/li&gt;
-  &lt;li&gt;Third item, what what?!&lt;/li&gt;
-  &lt;li&gt;Fourth item, fo sheezy my neezy&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;oh-hai-an-ordered-list&quot;&gt;Oh hai, an ordered list!!&lt;/h3&gt;
-
-&lt;p&gt;In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;First item, yo&lt;/li&gt;
-  &lt;li&gt;Second item, dawg&lt;/li&gt;
-  &lt;li&gt;Third item, what what?!&lt;/li&gt;
-  &lt;li&gt;Fourth item, fo sheezy my neezy&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;headings-are-cool-h2&quot;&gt;Headings are cool! (h2)&lt;/h2&gt;
-
-&lt;p&gt;Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.&lt;/p&gt;
-
-&lt;p&gt;Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.&lt;/p&gt;
-
-&lt;p&gt;Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc.&lt;/p&gt;
-
-&lt;h3 id=&quot;tables&quot;&gt;Tables&lt;/h3&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Title 1&lt;/th&gt;
-      &lt;th&gt;Title 2&lt;/th&gt;
-      &lt;th&gt;Title 3&lt;/th&gt;
-      &lt;th&gt;Title 4&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;lorem&lt;/td&gt;
-      &lt;td&gt;lorem ipsum&lt;/td&gt;
-      &lt;td&gt;lorem ipsum dolor&lt;/td&gt;
-      &lt;td&gt;lorem ipsum dolor sit&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;lorem ipsum dolor sit&lt;/td&gt;
-      &lt;td&gt;lorem ipsum dolor sit&lt;/td&gt;
-      &lt;td&gt;lorem ipsum dolor sit&lt;/td&gt;
-      &lt;td&gt;lorem ipsum dolor sit&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;lorem ipsum dolor sit&lt;/td&gt;
-      &lt;td&gt;lorem ipsum dolor sit&lt;/td&gt;
-      &lt;td&gt;lorem ipsum dolor sit&lt;/td&gt;
-      &lt;td&gt;lorem ipsum dolor sit&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;lorem ipsum dolor sit&lt;/td&gt;
-      &lt;td&gt;lorem ipsum dolor sit&lt;/td&gt;
-      &lt;td&gt;lorem ipsum dolor sit&lt;/td&gt;
-      &lt;td&gt;lorem ipsum dolor sit&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Title 1&lt;/th&gt;
-      &lt;th&gt;Title 2&lt;/th&gt;
-      &lt;th&gt;Title 3&lt;/th&gt;
-      &lt;th&gt;Title 4&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;lorem&lt;/td&gt;
-      &lt;td&gt;lorem ipsum&lt;/td&gt;
-      &lt;td&gt;lorem ipsum dolor&lt;/td&gt;
-      &lt;td&gt;lorem ipsum dolor sit&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;lorem ipsum dolor sit amet&lt;/td&gt;
-      &lt;td&gt;lorem ipsum dolor sit amet consectetur&lt;/td&gt;
-      &lt;td&gt;lorem ipsum dolor sit amet&lt;/td&gt;
-      &lt;td&gt;lorem ipsum dolor sit&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;lorem ipsum dolor&lt;/td&gt;
-      &lt;td&gt;lorem ipsum&lt;/td&gt;
-      &lt;td&gt;lorem&lt;/td&gt;
-      &lt;td&gt;lorem ipsum&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;lorem ipsum dolor&lt;/td&gt;
-      &lt;td&gt;lorem ipsum dolor sit&lt;/td&gt;
-      &lt;td&gt;lorem ipsum dolor sit amet&lt;/td&gt;
-      &lt;td&gt;lorem ipsum dolor sit amet consectetur&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name>[&quot;Bart Simpson&quot;, &quot;Nelson Mandela Muntz&quot;]</name></author><category term="junk" /><summary type="html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://github.com/francescomacri/Number_Theory_Into_Code/blob/main/euclidean_algorithm.py&quot; target=&quot;_blank&quot;&gt;Here&lt;/a&gt; you will find the code snippet in GitHub.&lt;/p&gt;</content><author><name>Francesco Macrì</name></author><category term="Number_Theory" /><summary type="html">Given two integers $A$ and $B$ with $A &amp;gt; B \geqslant 0$, this algorithm computes gcd($A, B$). It is based on two facts:</summary></entry></feed>

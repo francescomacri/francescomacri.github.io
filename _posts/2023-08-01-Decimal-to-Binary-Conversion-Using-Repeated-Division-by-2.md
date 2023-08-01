@@ -1,6 +1,8 @@
 ---
 layout: post
 author: Francesco Macrì
+categories: Number_Theory
+meta: "Python"
 ---
 
 In this algorithm the input is a nonnegative integer $a$. The aim of this algorithm is to produce a sequence of binary digits $r[0],r[1],r[2], \dots , r[k]$ so that the binary representation of $n$ is: 
@@ -11,8 +13,7 @@ _**From**_: Susanna S. Epp, Discrete Mathematics with Applications, Metric Versi
 
 _Sample solution in Python_:
 
-{% highlight python %}
-
+```python
 n = []
 
 def decimal_to_binary_list(a):
@@ -40,8 +41,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-{% endhighlight %}
+```
 
 _Output:_ 20 in binary notation is 10100.
 
@@ -53,8 +53,7 @@ The same algorithm can be used with a different base in order to convert decimal
 
 Here is the sample solution in Python:
 
-{% highlight python %}
-
+```python
 def decimal_to_hexadecimal(decimal):
     if decimal == 0:
         return "0"
@@ -82,8 +81,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-{% endhighlight %}
+```
 
 
 _Output:_ 287 in hexadecimal notation is 11F.

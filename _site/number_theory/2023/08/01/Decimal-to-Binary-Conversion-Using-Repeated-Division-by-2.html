@@ -10,15 +10,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="In this algorithm the input is a nonnegative integer $a$. The aim of this algorithm is to produce a sequence of binary digits $r[0],r[1],r[2], \dots , r[k]$ so that the binary representation of $n$ is:" />
 <meta property="og:description" content="In this algorithm the input is a nonnegative integer $a$. The aim of this algorithm is to produce a sequence of binary digits $r[0],r[1],r[2], \dots , r[k]$ so that the binary representation of $n$ is:" />
-<link rel="canonical" href="http://localhost:4000/2023/08/01/Decimal-to-Binary-Conversion-Using-Repeated-Division-by-2.html" />
-<meta property="og:url" content="http://localhost:4000/2023/08/01/Decimal-to-Binary-Conversion-Using-Repeated-Division-by-2.html" />
+<link rel="canonical" href="http://localhost:4000/number_theory/2023/08/01/Decimal-to-Binary-Conversion-Using-Repeated-Division-by-2.html" />
+<meta property="og:url" content="http://localhost:4000/number_theory/2023/08/01/Decimal-to-Binary-Conversion-Using-Repeated-Division-by-2.html" />
 <meta property="og:site_name" content="Mathematics Into Code" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-08-01T00:00:00+02:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Decimal To Binary Conversion Using Repeated Division By 2" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Francesco Macrì"},"dateModified":"2023-08-01T00:00:00+02:00","datePublished":"2023-08-01T00:00:00+02:00","description":"In this algorithm the input is a nonnegative integer $a$. The aim of this algorithm is to produce a sequence of binary digits $r[0],r[1],r[2], \\dots , r[k]$ so that the binary representation of $n$ is:","headline":"Decimal To Binary Conversion Using Repeated Division By 2","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2023/08/01/Decimal-to-Binary-Conversion-Using-Repeated-Division-by-2.html"},"url":"http://localhost:4000/2023/08/01/Decimal-to-Binary-Conversion-Using-Repeated-Division-by-2.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Francesco Macrì"},"dateModified":"2023-08-01T00:00:00+02:00","datePublished":"2023-08-01T00:00:00+02:00","description":"In this algorithm the input is a nonnegative integer $a$. The aim of this algorithm is to produce a sequence of binary digits $r[0],r[1],r[2], \\dots , r[k]$ so that the binary representation of $n$ is:","headline":"Decimal To Binary Conversion Using Repeated Division By 2","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/number_theory/2023/08/01/Decimal-to-Binary-Conversion-Using-Repeated-Division-by-2.html"},"url":"http://localhost:4000/number_theory/2023/08/01/Decimal-to-Binary-Conversion-Using-Repeated-Division-by-2.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Mathematics Into Code" />
 </head>
@@ -59,7 +59,7 @@
 
 <p><em>Sample solution in Python</em>:</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">n</span> <span class="o">=</span> <span class="p">[]</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">n</span> <span class="o">=</span> <span class="p">[]</span>
 
 <span class="k">def</span> <span class="nf">decimal_to_binary_list</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
     <span class="k">while</span> <span class="n">a</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
@@ -85,7 +85,8 @@
 
 
 <span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="sh">"</span><span class="s">__main__</span><span class="sh">"</span><span class="p">:</span>
-    <span class="nf">main</span><span class="p">()</span></code></pre></figure>
+    <span class="nf">main</span><span class="p">()</span>
+</code></pre></div></div>
 
 <p><em>Output:</em> 20 in binary notation is 10100.</p>
 
@@ -97,7 +98,7 @@
 
 <p>Here is the sample solution in Python:</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">decimal_to_hexadecimal</span><span class="p">(</span><span class="n">decimal</span><span class="p">):</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">decimal_to_hexadecimal</span><span class="p">(</span><span class="n">decimal</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">decimal</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">return</span> <span class="sh">"</span><span class="s">0</span><span class="sh">"</span>
 
@@ -123,13 +124,14 @@
 
 
 <span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="sh">"</span><span class="s">__main__</span><span class="sh">"</span><span class="p">:</span>
-    <span class="nf">main</span><span class="p">()</span></code></pre></figure>
+    <span class="nf">main</span><span class="p">()</span>
+</code></pre></div></div>
 
 <p><em>Output:</em> 287 in hexadecimal notation is 11F.</p>
 
 <p><a href="https://github.com/francescomacri/Number_Theory_Into_Code/blob/main/decimal_to_hexadecimal.py" target="_blank">Here</a> will find the code snippet in GitHub.</p>
 
-  </div><a class="u-url" href="/2023/08/01/Decimal-to-Binary-Conversion-Using-Repeated-Division-by-2.html" hidden></a>
+  </div><a class="u-url" href="/number_theory/2023/08/01/Decimal-to-Binary-Conversion-Using-Repeated-Division-by-2.html" hidden></a>
 </article>
 
       </div>
