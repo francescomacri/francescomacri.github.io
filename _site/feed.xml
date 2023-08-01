@@ -1,16 +1,88 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-08-01T14:40:49+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mathematics Into Code</title><subtitle>Welcome! This is my GitHub-weppage Mathematics Into Code where I delve into the algorithmic and computational side of mathematics. You’ll find a variety of interesting posts that combine mathematical concepts with computational problem-solving.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-08-01T14:59:33+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mathematics Into Code</title><subtitle>Welcome! This is my GitHub-weppage Mathematics Into Code where I delve into the algorithmic and computational side of mathematics. You’ll find a variety of interesting posts that combine mathematical concepts with computational problem-solving.
 </subtitle><author><name>Francesco Macrì</name><email>francescomacri [at] piecesofmathematics [dot] com</email></author><entry><title type="html">Decimal To Binary Conversion Using Repeated Division By 2</title><link href="http://localhost:4000/2023/08/01/Decimal-to-Binary-Conversion-Using-Repeated-Division-by-2.html" rel="alternate" type="text/html" title="Decimal To Binary Conversion Using Repeated Division By 2" /><published>2023-08-01T00:00:00+02:00</published><updated>2023-08-01T00:00:00+02:00</updated><id>http://localhost:4000/2023/08/01/Decimal-to-Binary-Conversion-Using-Repeated-Division-by-2</id><content type="html" xml:base="http://localhost:4000/2023/08/01/Decimal-to-Binary-Conversion-Using-Repeated-Division-by-2.html">&lt;p&gt;In this algorithm the input is a nonnegative integer $a$. The aim of this algorithm is to produce a sequence of binary digits $r[0],r[1],r[2], \dots , r[k]$ so that the binary representation of $n$ is:&lt;/p&gt;
 
 \[a = 2^{k} \cdot r[k] + 2^{k-1} \cdot r[k-1] + \cdots + 2^{2} \cdot r[2] + 2^{1} \cdot r[1] + 2^{0} \cdot r[0].\]
 
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;From&lt;/strong&gt;&lt;/em&gt;: Susanna S. Epp, Discrete Mathematics with Applications, Metric Version, 2020 Australia, pages 272-273.&lt;/p&gt;</content><author><name>Francesco Macrì</name><email>francescomacri [at] piecesofmathematics [dot] com</email></author><summary type="html">In this algorithm the input is a nonnegative integer $a$. The aim of this algorithm is to produce a sequence of binary digits $r[0],r[1],r[2], \dots , r[k]$ so that the binary representation of $n$ is:</summary></entry><entry><title type="html">Euclidean Algorithm</title><link href="http://localhost:4000/2023/08/01/Euclidean-Algorithm.html" rel="alternate" type="text/html" title="Euclidean Algorithm" /><published>2023-08-01T00:00:00+02:00</published><updated>2023-08-01T00:00:00+02:00</updated><id>http://localhost:4000/2023/08/01/Euclidean-Algorithm</id><content type="html" xml:base="http://localhost:4000/2023/08/01/Euclidean-Algorithm.html">&lt;p&gt;Given two integers $A$ and $B$ with $A &amp;gt; B \geqslant 0$, this algorithm computes gcd($A, B$). It is based on two facts:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;From&lt;/strong&gt;&lt;/em&gt;: Susanna S. Epp, Discrete Mathematics with Applications, Metric Version, 2020 Australia, pages 272-273.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Sample solution in Python&lt;/em&gt;:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;decimal_to_binary_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;reverse_list_to_integer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;reversed_string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;element&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[::&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;transformed&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reversed_string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;transformed&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;nf&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Please insert the decimal number you want to transform into binary: &lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; in binary notation is &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;reverse_list_to_integer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;decimal_to_binary_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;__main__&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;em&gt;Output:&lt;/em&gt; 20 in binary notation is 10100.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/francescomacri/Number_Theory_Into_Code/blob/main/decimal_to_binary.py&quot;&gt;Here&lt;/a&gt; you will find the code snippet in GitHub.&lt;/p&gt;
+
+&lt;h2 id=&quot;variation-converting-from-decimal-to-hexadecimal&quot;&gt;Variation: Converting from decimal to hexadecimal&lt;/h2&gt;
+
+&lt;p&gt;The same algorithm can be used with a different base in order to convert decimal numbers into numbers with other bases, for example into a hexadecimal number.&lt;/p&gt;
+
+&lt;p&gt;Here is the sample solution in Python:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;decimal_to_hexadecimal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decimal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;decimal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;hexadecimal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&quot;&quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;decimal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;remainder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;decimal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;remainder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;hexadecimal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;remainder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hexadecimal&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;hexadecimal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;chr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;65&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;remainder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hexadecimal&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;decimal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;//=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hexadecimal&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;nf&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+            &lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Please insert the decimal number you want to transform into hexadecimal: &lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; in hexadecimal notation is &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;decimal_to_hexadecimal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;__main__&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;em&gt;Output:&lt;/em&gt; 287 in hexadecimal notation is 11F.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/francescomacri/Number_Theory_Into_Code/blob/main/decimal_to_hexadecimal.py&quot;&gt;Here&lt;/a&gt; you will find the code snippet in GitHub.&lt;/p&gt;</content><author><name>Francesco Macrì</name></author><summary type="html">In this algorithm the input is a nonnegative integer $a$. The aim of this algorithm is to produce a sequence of binary digits $r[0],r[1],r[2], \dots , r[k]$ so that the binary representation of $n$ is:</summary></entry><entry><title type="html">Euclidean Algorithm</title><link href="http://localhost:4000/2023/08/01/Euclidean-Algorithm.html" rel="alternate" type="text/html" title="Euclidean Algorithm" /><published>2023-08-01T00:00:00+02:00</published><updated>2023-08-01T00:00:00+02:00</updated><id>http://localhost:4000/2023/08/01/Euclidean-Algorithm</id><content type="html" xml:base="http://localhost:4000/2023/08/01/Euclidean-Algorithm.html">&lt;p&gt;Given two integers $A$ and $B$ with $A &amp;gt; B \geqslant 0$, this algorithm computes gcd($A, B$). It is based on two facts:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;gcd($a, b$) = gcd($b, r$) if $a, b, q,$ and $r$ are integers with $a = b \cdot q + r$ and $0 \leqslant r &amp;lt; b$.&lt;/li&gt;
   &lt;li&gt;gcd($a, 0$) = $a$.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;em&gt;From: Susanna S. Epp, Discrete Mathematics with Applications, Metric Version, 2020 Australia, page 254.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;From&lt;/strong&gt;: Susanna S. Epp, Discrete Mathematics with Applications, Metric Version, 2020 Australia, page 254.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Sample solution in Python&lt;/em&gt;.&lt;/p&gt;
 
@@ -30,20 +102,12 @@
     &lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;The gcd of &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; and &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; is &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;euclid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;__main__&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+    &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/francescomacri/Number_Theory_Into_Code/blob/main/euclidean_algorithm.py&quot;&gt;Here&lt;/a&gt; you will find the code snippet in GitHub.&lt;/p&gt;</content><author><name>Francesco Macrì</name></author><summary type="html">Given two integers $A$ and $B$ with $A &amp;gt; B \geqslant 0$, this algorithm computes gcd($A, B$). It is based on two facts:</summary></entry><entry><title type="html">This is Mathematics</title><link href="http://localhost:4000/2023/07/31/MathJax.html" rel="alternate" type="text/html" title="This is Mathematics" /><published>2023-07-31T00:00:00+02:00</published><updated>2023-07-31T00:00:00+02:00</updated><id>http://localhost:4000/2023/07/31/MathJax</id><content type="html" xml:base="http://localhost:4000/2023/07/31/MathJax.html">&lt;h2 id=&quot;this-is-a-mathjax-test&quot;&gt;This is a MathJax-Test&lt;/h2&gt;
-&lt;h3 id=&quot;here-are-the-different-possibilities&quot;&gt;Here are the different possibilities&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Output:&lt;/em&gt; The gcd of 48 and 16 is 16.&lt;/p&gt;
 
-&lt;p&gt;With two square brackets one gets centered math formulas like this: 
-\[ \sum_{k=1}^{n} k \]&lt;/p&gt;
-
-&lt;p&gt;With normal brackets one gets inline-math-formulas like this: 
-\( \sum_{k=1}^{n} k \)&lt;/p&gt;
-
-\[x^{2}\]
-
-&lt;p&gt;$ x^{2} $&lt;/p&gt;</content><author><name>Francesco Macrì</name></author><summary type="html">This is a MathJax-Test Here are the different possibilities</summary></entry><entry><title type="html">This post demonstrates post content styles</title><link href="http://localhost:4000/junk/2016/05/20/this-post-demonstrates-post-content-styles.html" rel="alternate" type="text/html" title="This post demonstrates post content styles" /><published>2016-05-20T00:00:00+02:00</published><updated>2016-05-20T00:00:00+02:00</updated><id>http://localhost:4000/junk/2016/05/20/this-post-demonstrates-post-content-styles</id><content type="html" xml:base="http://localhost:4000/junk/2016/05/20/this-post-demonstrates-post-content-styles.html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/francescomacri/Number_Theory_Into_Code/blob/main/euclidean_algorithm.py&quot;&gt;Here&lt;/a&gt; you will find the code snippet in GitHub.&lt;/p&gt;</content><author><name>Francesco Macrì</name></author><summary type="html">Given two integers $A$ and $B$ with $A &amp;gt; B \geqslant 0$, this algorithm computes gcd($A, B$). It is based on two facts:</summary></entry><entry><title type="html">This post demonstrates post content styles</title><link href="http://localhost:4000/junk/2016/05/20/this-post-demonstrates-post-content-styles.html" rel="alternate" type="text/html" title="This post demonstrates post content styles" /><published>2016-05-20T00:00:00+02:00</published><updated>2016-05-20T00:00:00+02:00</updated><id>http://localhost:4000/junk/2016/05/20/this-post-demonstrates-post-content-styles</id><content type="html" xml:base="http://localhost:4000/junk/2016/05/20/this-post-demonstrates-post-content-styles.html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.&lt;/p&gt;
 
 &lt;h2 id=&quot;some-great-heading-h2&quot;&gt;Some great heading (h2)&lt;/h2&gt;
 

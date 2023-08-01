@@ -13,7 +13,7 @@ _**From**: Susanna S. Epp, Discrete Mathematics with Applications, Metric Versio
 
 _Sample solution in Python_. 
 
-{% highlight python%}
+{% highlight python %}
 
 def euclid(a, b):
     while b != 0:
@@ -32,6 +32,9 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
 {% endhighlight %}
+
+_Output:_ The gcd of 48 and 16 is 16.
 
 [Here](https://github.com/francescomacri/Number_Theory_Into_Code/blob/main/euclidean_algorithm.py) you will find the code snippet in GitHub.
