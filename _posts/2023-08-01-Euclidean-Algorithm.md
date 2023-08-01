@@ -37,4 +37,4 @@ if __name__ == "__main__":
 
 _Output:_ The gcd of 48 and 16 is 16.
 
-[Here](https://github.com/francescomacri/Number_Theory_Into_Code/blob/main/euclidean_algorithm.py) you will find the code snippet in GitHub.
+<a href="https://github.com/francescomacri/Number_Theory_Into_Code/blob/main/euclidean_algorithm.py">Here</a> you will find the code snippet in GitHub.
