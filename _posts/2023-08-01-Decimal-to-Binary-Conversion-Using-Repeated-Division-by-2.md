@@ -9,9 +9,9 @@ In this algorithm the input is a nonnegative integer $a$. The aim of this algori
 
 $$ a = 2^{k} \cdot r[k] + 2^{k-1} \cdot r[k-1] + \cdots + 2^{2} \cdot r[2] + 2^{1} \cdot r[1] + 2^{0} \cdot r[0].$$
 
-_**From**_: Susanna S. Epp, Discrete Mathematics with Applications, Metric Version, 2020 Australia, pages 272-273.
+(*From: Susanna S. Epp, Discrete Mathematics with Applications, Metric Version, 2020 Australia, pages 272-273.*)
 
-_Sample solution in Python_:
+*Sample solution in Python*:
 
 ```python
 n = []
@@ -51,7 +51,7 @@ _Output:_ 20 in binary notation is 10100.
 
 The same algorithm can be used with a different base in order to convert decimal numbers into numbers with other bases, for example into a hexadecimal number.
 
-Here is the sample solution in Python:
+*Sample solution in Python:*
 
 ```python
 def decimal_to_hexadecimal(decimal):

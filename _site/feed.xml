@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-08-05T13:10:41+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mathematics Into Code</title><subtitle>Welcome! This is my GitHub-weppage Mathematics Into Code where I delve into the algorithmic and computational side of mathematics. You’ll find a variety of interesting posts that combine mathematical concepts with computational problem-solving.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-08-12T08:17:31+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mathematics Into Code</title><subtitle>Welcome! This is my GitHub-weppage Mathematics Into Code where I delve into the algorithmic and computational side of mathematics. You’ll find a variety of interesting posts that combine mathematical concepts with computational problem-solving.
 </subtitle><author><name>Francesco Macrì</name><email>francescomacri [at] piecesofmathematics [dot] com</email></author><entry><title type="html">Decimal To Binary Conversion Using Repeated Division By 2</title><link href="http://localhost:4000/number_theory/2023/08/01/Decimal-to-Binary-Conversion-Using-Repeated-Division-by-2.html" rel="alternate" type="text/html" title="Decimal To Binary Conversion Using Repeated Division By 2" /><published>2023-08-01T00:00:00+02:00</published><updated>2023-08-01T00:00:00+02:00</updated><id>http://localhost:4000/number_theory/2023/08/01/Decimal-to-Binary-Conversion-Using-Repeated-Division-by-2</id><content type="html" xml:base="http://localhost:4000/number_theory/2023/08/01/Decimal-to-Binary-Conversion-Using-Repeated-Division-by-2.html">&lt;p&gt;In this algorithm the input is a nonnegative integer $a$. The aim of this algorithm is to produce a sequence of binary digits $r[0],r[1],r[2], \dots , r[k]$ so that the binary representation of $n$ is:&lt;/p&gt;
 
 \[a = 2^{k} \cdot r[k] + 2^{k-1} \cdot r[k-1] + \cdots + 2^{2} \cdot r[2] + 2^{1} \cdot r[1] + 2^{0} \cdot r[0].\]
 
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;From&lt;/strong&gt;&lt;/em&gt;: Susanna S. Epp, Discrete Mathematics with Applications, Metric Version, 2020 Australia, pages 272-273.&lt;/p&gt;
+&lt;p&gt;(&lt;em&gt;From: Susanna S. Epp, Discrete Mathematics with Applications, Metric Version, 2020 Australia, pages 272-273.&lt;/em&gt;)&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Sample solution in Python&lt;/em&gt;:&lt;/p&gt;
 
@@ -44,7 +44,7 @@
 
 &lt;p&gt;The same algorithm can be used with a different base in order to convert decimal numbers into numbers with other bases, for example into a hexadecimal number.&lt;/p&gt;
 
-&lt;p&gt;Here is the sample solution in Python:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Sample solution in Python:&lt;/em&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;decimal_to_hexadecimal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decimal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;decimal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
@@ -84,7 +84,7 @@
   &lt;li&gt;gcd($a, 0$) = $a$.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;From&lt;/strong&gt;: Susanna S. Epp, Discrete Mathematics with Applications, Metric Version, 2020 Australia, page 254.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;(&lt;em&gt;From: Susanna S. Epp, Discrete Mathematics with Applications, Metric Version, 2020 Australia, page 254.&lt;/em&gt;)&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Sample solution in Python&lt;/em&gt;.&lt;/p&gt;
 

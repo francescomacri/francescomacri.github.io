@@ -11,7 +11,7 @@ Given two integers $A$ and $B$ with $A > B \geqslant 0$, this algorithm computes
 1. gcd($a, b$) = gcd($b, r$) if $a, b, q,$ and $r$ are integers with $a = b \cdot q + r$ and $0 \leqslant r < b$.
 2. gcd($a, 0$) = $a$.
 
-_**From**: Susanna S. Epp, Discrete Mathematics with Applications, Metric Version, 2020 Australia, page 254._
+(*From: Susanna S. Epp, Discrete Mathematics with Applications, Metric Version, 2020 Australia, page 254.*)
 
 _Sample solution in Python_. 
 
