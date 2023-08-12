@@ -4,6 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Welcome! This is my GitHub-Website "Mathematics Into Code", where I delve into the algorithmic and computational side of mathematics. You’ll find a variety of interesting posts that combine mathematical concepts with computational problem-solving.
+Welcome! This is my GitHub-Website _Mathematics Into Code_, where I delve into the algorithmic and computational side of mathematics. You’ll find a variety of posts that combine mathematical concepts with computational problem-solving. 
+The sample implementation within the posts shows usually only the relevant code snippet. The posts usually contain the link to the slightly more complete implementation of the respective algorithm. The code within the repository is intended to be a starting point for further explorations and experimentations.
 
-As the name of my other website <a href="https://www.piecesofmathematics.com" target="_blank">Pieces of Mathematics</a> suggests, you will find there presentations of fascinating pieces of mathematics.
+On my other website <a href="https://www.piecesofmathematics.com" target="_blank">Pieces of Mathematics</a> you will find  presentations of fascinating pieces of mathematics. However, the two websites are not necessarily congruent with respect to the concepts treated.
