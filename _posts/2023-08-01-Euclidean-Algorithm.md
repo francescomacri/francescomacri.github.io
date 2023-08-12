@@ -13,7 +13,7 @@ Given two integers $A$ and $B$ with $A > B \geqslant 0$, this algorithm computes
 
 (*From: Susanna S. Epp, Discrete Mathematics with Applications, Metric Version, 2020 Australia, page 254.*)
 
-_Sample solution in Python_. 
+*Here is a sample implementation of the algorithm in Python:*
 
 ```python
 def euclid(a, b):
@@ -24,18 +24,6 @@ def euclid(a, b):
         else:
             a = b
             b = r
-    return
-
-def main():
-    a = int(input("Integer a:"))
-    b = int(input("Integer b:"))
-    print(f"The gcd of {a} and {b} is {euclid(a, b)}.")
-
-if __name__ == "__main__":
-    main()
-    
+    return    
 ```
-
-_Output:_ The gcd of 48 and 16 is 16.
-
-<a href="https://github.com/francescomacri/Number_Theory_Into_Code/blob/main/euclidean_algorithm.py" target="_blank">Here</a> you will find the code snippet in GitHub.
+<a href="https://github.com/francescomacri/Number_Theory_Into_Code/blob/main/euclidean_algorithm.py" target="_blank">Here</a> you will find the code in GitHub.

@@ -60,7 +60,7 @@
 
 <p>(<em>From: Susanna S. Epp, Discrete Mathematics with Applications, Metric Version, 2020 Australia, page 254.</em>)</p>
 
-<p><em>Sample solution in Python</em>.</p>
+<p><em>Here is a sample implementation of the algorithm in Python:</em></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">euclid</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
     <span class="k">while</span> <span class="n">b</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
@@ -70,21 +70,9 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="n">a</span> <span class="o">=</span> <span class="n">b</span>
             <span class="n">b</span> <span class="o">=</span> <span class="n">r</span>
-    <span class="k">return</span>
-
-<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
-    <span class="n">a</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">"</span><span class="s">Integer a:</span><span class="sh">"</span><span class="p">))</span>
-    <span class="n">b</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">"</span><span class="s">Integer b:</span><span class="sh">"</span><span class="p">))</span>
-    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">The gcd of </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s"> and </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s"> is </span><span class="si">{</span><span class="nf">euclid</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span><span class="si">}</span><span class="s">.</span><span class="sh">"</span><span class="p">)</span>
-
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="sh">"</span><span class="s">__main__</span><span class="sh">"</span><span class="p">:</span>
-    <span class="nf">main</span><span class="p">()</span>
-    
+    <span class="k">return</span>    
 </code></pre></div></div>
-
-<p><em>Output:</em> The gcd of 48 and 16 is 16.</p>
-
-<p><a href="https://github.com/francescomacri/Number_Theory_Into_Code/blob/main/euclidean_algorithm.py" target="_blank">Here</a> you will find the code snippet in GitHub.</p>
+<p><a href="https://github.com/francescomacri/Number_Theory_Into_Code/blob/main/euclidean_algorithm.py" target="_blank">Here</a> you will find the code in GitHub.</p>
 
   </div><a class="u-url" href="/number_theory/2023/08/01/Euclidean-Algorithm.html" hidden></a>
 </article>

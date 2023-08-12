@@ -11,7 +11,7 @@ $$ a = 2^{k} \cdot r[k] + 2^{k-1} \cdot r[k-1] + \cdots + 2^{2} \cdot r[2] + 2^{
 
 (*From: Susanna S. Epp, Discrete Mathematics with Applications, Metric Version, 2020 Australia, pages 272-273.*)
 
-*Sample solution in Python*:
+*Here is a sample implementation of the algorithm in Python:*
 
 ```python
 n = []
@@ -22,36 +22,14 @@ def decimal_to_binary_list(a):
         n.append(r)
         a = a // 2
     return n
-
-
-def reverse_list_to_integer(n):
-    reversed_string = "".join(str(element) for element in n[::-1])
-    transformed = int(reversed_string)
-    return transformed
-
-
-def main():
-    a = int(
-        input("Please insert the decimal number you want to transform into binary: ")
-    )
-    print(
-        f"{a} in binary notation is {reverse_list_to_integer(decimal_to_binary_list(a))}."
-    )
-
-
-if __name__ == "__main__":
-    main()
 ```
-
-_Output:_ 20 in binary notation is 10100.
-
 <a href="https://github.com/francescomacri/Number_Theory_Into_Code/blob/main/decimal_to_binary.py" target="_blank">Here</a> you will find the code snippet in GitHub.
 
 ## Variation: Converting from decimal to hexadecimal
 
-The same algorithm can be used with a different base in order to convert decimal numbers into numbers with other bases, for example into a hexadecimal number.
+The same algorithm can be used with a different base in order to convert decimal numbers into numbers with other bases. Here is an example for the conversion from decimal numbers into into hexadecimal numbers.
 
-*Sample solution in Python:*
+*Here is a sample implementation of the algorithm in Python:*
 
 ```python
 def decimal_to_hexadecimal(decimal):
@@ -68,22 +46,5 @@ def decimal_to_hexadecimal(decimal):
         decimal //= 16
 
     return hexadecimal
-
-
-def main():
-    a = int(
-        input(
-            "Please insert the decimal number you want to transform into hexadecimal: "
-        )
-    )
-    print(f"{a} in hexadecimal notation is {decimal_to_hexadecimal(a)}.")
-
-
-if __name__ == "__main__":
-    main()
 ```
-
-
-_Output:_ 287 in hexadecimal notation is 11F.
-
 <a href="https://github.com/francescomacri/Number_Theory_Into_Code/blob/main/decimal_to_hexadecimal.py" target="_blank">Here</a> will find the code snippet in GitHub.
